@@ -8,7 +8,5 @@ spring:
   data:
     mongodb:
       host: localhost
-      password: root
-      username: root
       database: patient_db
       port: 27017
