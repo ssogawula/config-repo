@@ -10,3 +10,8 @@ spring:
       host: localhost
       database: auth_db
       port: 27017
+zuul:
+  routes:
+    patient-service:
+      path: /api/patients/**
+      url: http://localhost:8081
