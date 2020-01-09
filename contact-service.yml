@@ -18,6 +18,6 @@ spring:
   cloud:
     stream:
       bindings:
-        patient_input:
-          destination: patient-exchange
-          group: patient-queue
+        contact_input:
+          destination: contact-exchange
+          group: contact-queue
