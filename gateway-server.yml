@@ -11,6 +11,10 @@ spring:
       database: auth_db
       port: 27017
 zuul:
+  host:
+    connect-timeout-millis: 5000000
+    socket-time-millis: 5000000
+  ignoredServices: '*'
   routes:
     patient-service:
       path: /api/patients/**
