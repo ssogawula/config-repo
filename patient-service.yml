@@ -1,3 +1,6 @@
+spring:
+  profiles:
+    - docker
 eureka:
   client:
     serviceUrl:
