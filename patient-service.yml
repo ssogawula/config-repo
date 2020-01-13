@@ -1,11 +1,15 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery-server:8761/eureka/
+    registerWithEureka: true
+    fetchRegistry: true
 spring:
   data:
     mongodb:
-      host: localhost
-      database: patient_db
-      port: 27017
+     uri: mongocontainer://mongocontainer:27017/patient_db
   rabbitmq:
-    host: localhost
+    host: rabbitmq
     port: 5672
     username: guest
     password: guest
@@ -16,4 +20,7 @@ spring:
           destination: patient-exchange
         contact_output:
           destination: contact-exchange
+    loadbalancer:
+      ribbon:
+        enabled: false
   
