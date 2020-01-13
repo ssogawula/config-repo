@@ -7,7 +7,7 @@ eureka:
 spring:
   data:
     mongodb:
-     uri: mongocontainer://mongocontainer:27017/patient_db
+     uri: mongodb://mongocontainer:27017/patient_db
   rabbitmq:
     host: rabbitmq
     port: 5672
