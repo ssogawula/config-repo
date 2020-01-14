@@ -11,3 +11,9 @@ eureka:
       defaultZone: http://discovery-server:8761/eureka/
     registerWithEureka: true
     fetchRegistry: true
+    
+zuul:
+  routes:
+    patient-service:
+      path: /api/patients/**
+      url: http://localhost:8081/
