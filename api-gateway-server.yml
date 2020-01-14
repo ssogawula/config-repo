@@ -17,3 +17,4 @@ zuul:
     patient-service:
       path: /api/patients/**
       url: http://patient-service:8081/
+      stripPrefix: false
