@@ -1,6 +1,23 @@
 spring:
+  profiles:
+    - docker
   data:
     mongodb:
-      host: localhost
-      database: queueing_db
-      port: 27017
+     uri: mongodb://mongocontainer:27017/queueing_db
+  rabbitmq:
+    host: rabbitmq
+    port: 5672
+    username: guest
+    password: guest
+  cloud:
+    stream:
+      bindings:
+        contact_input:
+          destination: contact-exchange
+          group: contact-queue
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery-server:8761/eureka/
+    registerWithEureka: true
+    fetchRegistry: true
