@@ -1,11 +1,11 @@
 spring:
+  profiles:
+    - docker
   data:
     mongodb:
-      host: localhost
-      database: contact_db
-      port: 27017
+     uri: mongodb://mongocontainer:27017/contact_db
   rabbitmq:
-    host: localhost
+    host: rabbitmq
     port: 5672
     username: guest
     password: guest
