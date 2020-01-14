@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    - docker
+  data:
+    mongodb:
+     uri: mongodb://mongocontainer:27017/auth_db
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery-server:8761/eureka/
+    registerWithEureka: true
+    fetchRegistry: true
