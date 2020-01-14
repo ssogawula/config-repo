@@ -12,9 +12,9 @@ spring:
   cloud:
     stream:
       bindings:
-        contact_input:
-          destination: contact-exchange
-          group: contact-queue
+        patient_input:
+          destination: patient-exchange
+          group: patient-queue
 eureka:
   client:
     serviceUrl:

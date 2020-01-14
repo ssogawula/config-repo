@@ -16,4 +16,4 @@ zuul:
   routes:
     patient-service:
       path: /api/patients/**
-      url: http://localhost:8081/
+      url: http://patient-service:8081/
