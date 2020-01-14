@@ -15,3 +15,9 @@ spring:
         contact_input:
           destination: contact-exchange
           group: contact-queue
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery-server:8761/eureka/
+    registerWithEureka: true
+    fetchRegistry: true
