@@ -20,7 +20,7 @@ zuul:
       path: /patients/**
       url: http://localhost:8081/
       stripPrefix: false
-    address-path:
+    contact-service:
       path: /contacts/**
-      serviceId: contact-service
+      url: http://localhost:8084/
       stripPrefix: false
