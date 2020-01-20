@@ -21,9 +21,6 @@ zuul:
       url: http://localhost:8081/
       stripPrefix: false
     address-path:
-      path: /addresses/**
-      serviceId: contact-service
-      stripPrefix: false
-    contact-path:
       path: /contacts/**
       serviceId: contact-service
+      stripPrefix: false
