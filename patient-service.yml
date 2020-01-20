@@ -16,6 +16,9 @@ spring:
           destination: patient-exchange
         contact_output:
           destination: contact-exchange
+        address_input:
+          destination: address-exchange
+          group: address-queue
     loadbalancer:
       ribbon:
         enabled: false
