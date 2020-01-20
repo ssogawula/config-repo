@@ -22,6 +22,12 @@ spring:
     loadbalancer:
       ribbon:
         enabled: false
+redis:
+  hostname: redis-cache
+  port: 6379
+  ttl:
+    hours: 5
+  
 eureka:
   client:
     serviceUrl:
