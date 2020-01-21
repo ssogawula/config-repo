@@ -18,14 +18,12 @@ zuul:
   routes:
     patient-service:
       path: /patients/**
-      serviceId: patient-service
+      serviceId: http://localhost:8081/
       stripPrefix: true
     contact-service:
       path: /contacts/**
-      serviceId: contact-service
+      url: http://localhost:8084/
       stripPrefix: true
-ribbon:
-  eureka:
-    enabled: false
+
 
 logging.level.org.springframework.web: DEBUG
