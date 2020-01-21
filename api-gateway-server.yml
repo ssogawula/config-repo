@@ -24,5 +24,8 @@ zuul:
       path: /contacts/**
       serviceId: contact-service
       stripPrefix: true
+ribbon:
+  eureka:
+    enabled: false
 
 logging.level.org.springframework.web: DEBUG
