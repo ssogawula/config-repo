@@ -25,3 +25,5 @@ zuul:
       path: /contacts/**
       serviceId: contact-service
       stripPrefix: true
+
+logging.level.org.springframework.web: DEBUG
