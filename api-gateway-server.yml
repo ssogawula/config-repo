@@ -19,11 +19,11 @@ zuul:
   routes:
     patient-service:
       path: /patients/**
-      url: http://patient-service:8081/
+      serviceId: patient-service
       stripPrefix: false
     contact-service:
       path: /contacts/**
-      url: http://contact-service:8084/
+      serviceId: contact-service
       stripPrefix: false
 
 
