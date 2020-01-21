@@ -19,11 +19,11 @@ zuul:
     patient-service:
       path: /patients/**
       serviceId: patient-service
-      stripPrefix: false
+      stripPrefix: true
     contact-service:
       path: /contacts/**
       serviceId: contact-service
-      stripPrefix: false
+      stripPrefix: true
 
 
 ribbon:
