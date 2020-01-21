@@ -14,6 +14,7 @@ eureka:
     eureka-server-read-timeout-seconds: 30
     
 zuul:
+  ignoredServices: '*'
   prefix: /api
   routes:
     patient-service:
