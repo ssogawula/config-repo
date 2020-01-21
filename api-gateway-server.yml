@@ -24,14 +24,3 @@ zuul:
       path: /contacts/**
       url: http://localhost:8084/
       stripPrefix: false
-
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 10000
-            
-ribbon:
-  readTimeout: 10000
