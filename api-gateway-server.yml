@@ -25,3 +25,7 @@ zuul:
       path: /contacts/**
       url: http://localhost:8084/
       stripPrefix: false
+
+ribbon:
+  eureka:
+    enabled: false
