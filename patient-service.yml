@@ -35,5 +35,9 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     eureka-server-read-timeout-seconds: 30
+   
+ribbon:
+  eureka:
+   enabled: false
     
 logging.level.org.springframework.web: DEBUG
