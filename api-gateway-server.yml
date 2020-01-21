@@ -18,11 +18,11 @@ zuul:
   routes:
     patient-service:
       path: /patients/**
-      url: http://patient-service:8081/
+      url: http://localhost:8081/
       stripPrefix: false
     contact-service:
       path: /contacts/**
-      url: http://contact-service:8084/
+      url: http://localhost:8084/
       stripPrefix: false
 
 hystrix:
