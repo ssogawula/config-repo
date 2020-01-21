@@ -7,10 +7,9 @@ spring:
 
 eureka:
   client:
-    enabled: false
     serviceUrl:
       defaultZone: http://discovery-server:8761/eureka/
-    registerWithEureka: false
+    registerWithEureka: true
     fetchRegistry: true
     
 zuul:
