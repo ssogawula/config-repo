@@ -19,9 +19,7 @@ spring:
         address_input:
           destination: address-exchange
           group: address-queue
-    loadbalancer:
-      ribbon:
-        enabled: false
+          
 redis:
   hostname: redis-cache
   port: 6379
