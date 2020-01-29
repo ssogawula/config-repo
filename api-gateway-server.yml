@@ -13,17 +13,20 @@ eureka:
     fetchRegistry: true
     
 zuul:
+  retryable: true
   ignoredServices: '*'
   prefix: /api
   routes:
     patient-service:
       path: /patients/**
-      serviceId: http://patient-service:8081/
-      stripPrefix: true
+      serviceIs: patient-service
     contact-service:
       path: /contacts/**
-      url: http://contact-service:8084/
-      stripPrefix: true
+      serviceId: contact-service
 
-
+ribbon:
+  MaxAutoRetries: 1
+  MaxAutoRetriesNextServer: 2
+  OkToRetryOnAllOperations: true
+  
 logging.level.org.springframework.web: DEBUG
