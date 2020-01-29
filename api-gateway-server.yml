@@ -13,7 +13,6 @@ eureka:
     fetchRegistry: true
     
 zuul:
-  retryable: true
   ignoredServices: '*'
   prefix: /api
   routes:
@@ -25,8 +24,6 @@ zuul:
       serviceId: contact-service
 
 ribbon:
-  MaxAutoRetries: 1
-  MaxAutoRetriesNextServer: 2
-  OkToRetryOnAllOperations: true
-  
+  eureka:
+    enabled: false
 logging.level.org.springframework.web: DEBUG
