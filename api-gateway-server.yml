@@ -24,5 +24,7 @@ zuul:
       path: /contacts/**
       serviceId: contact-service
       stripPrefix: false
+  host:
+    connect-timeout-millis: 30000
 
 logging.level.org.springframework.web: DEBUG
