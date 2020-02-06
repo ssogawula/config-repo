@@ -25,7 +25,4 @@ zuul:
       serviceId: contact-service
       stripPrefix: false
 
-ribbon:
-  eureka:
-    enabled: false
 logging.level.org.springframework.web: DEBUG
