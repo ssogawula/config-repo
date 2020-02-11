@@ -25,6 +25,10 @@ zuul:
       serviceId: contact-service
       stripPrefix: false
   host:
-    connect-timeout-millis: 30000
+    connect-timeout-millis: 60000
+
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
 
 logging.level.org.springframework.web: DEBUG
