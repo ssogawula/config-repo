@@ -13,8 +13,6 @@ spring:
         contact_input:
           destination: contact-exchange
           group: contact-queue
-        address_output:
-          destination: address-exchange
 eureka:
   client:
     serviceUrl:
