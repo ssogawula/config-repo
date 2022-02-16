@@ -19,10 +19,10 @@ zuul:
   ignoredServices: '*'
   routes:
     patient-service:
-      path: /**
+      path: /patient-service/**
       serviceId: patient-service
     contact-service:
-      path: /**
+      path: /contact-service/**
       serviceId: contact-service
   host:
     connect-timeout-millis: 60000
