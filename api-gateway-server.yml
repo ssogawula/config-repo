@@ -14,14 +14,13 @@ eureka:
     
 zuul:
   ignoredServices: '*'
-  prefix: /api
   routes:
     patient-service:
       path: /patients/**
       serviceId: patient-service
       stripPrefix: false
     contact-service:
-      path: /contacts/**
+      path: /contact-service/**
       serviceId: contact-service
       stripPrefix: false
   host:
