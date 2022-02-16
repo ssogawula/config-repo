@@ -13,7 +13,6 @@ eureka:
       defaultZone: ${EUREKA_URI:http://discovery-server:8761/eureka}
     registerWithEureka: true
     fetchRegistry: true
-    
 zuul:
   ignoredServices: '*'
   routes:
