@@ -2,10 +2,10 @@ spring:
   data:
     mongodb:
      uri: ${MONGO_URI:mongodb://mongocontainer:27017/auth_db}
- cloud:
-   loadBalancer:
-     ribbon:
-       enabled: false
+  cloud:
+    loadBalancer:
+      ribbon:
+        enabled: false
 
 eureka:
   client:
