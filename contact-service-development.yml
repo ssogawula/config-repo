@@ -14,6 +14,8 @@ spring:
           destination: contact-exchange
           group: contact-queue
 eureka:
+  instance:
+    preferIpAddress: true
   client:
     serviceUrl:
       defaultZone: ${EUREKA_URI:http://discovery-server:8761/eureka}
