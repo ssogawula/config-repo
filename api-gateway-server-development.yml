@@ -26,6 +26,11 @@ zuul:
       serviceId: contact-service
   host:
     connect-timeout-millis: 60000
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
   
 
 logging.level.org.springframework.web: DEBUG
