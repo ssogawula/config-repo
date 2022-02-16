@@ -2,6 +2,10 @@ spring:
   data:
     mongodb:
      uri: ${MONGO_URI:mongodb://mongocontainer:27017/auth_db}
+ cloud:
+   loadBalancer:
+     ribbon:
+       enabled: false
 
 eureka:
   client:
@@ -21,9 +25,6 @@ zuul:
       serviceId: contact-service
   host:
     connect-timeout-millis: 60000
-
-ribbon:
-  eureka:
-    enabled: false
+  
 
 logging.level.org.springframework.web: DEBUG
