@@ -14,13 +14,11 @@ zuul:
   ignoredServices: '*'
   routes:
     patient-service:
-      path: /patients/**
+      path: /api/patients/**
       serviceId: patient-service
-      stripPrefix: false
     contact-service:
-      path: /contact-service/**
+      path: /api/contacts/**
       serviceId: contact-service
-      stripPrefix: false
   host:
     connect-timeout-millis: 60000
 
