@@ -1,4 +1,7 @@
 spring:
+  devtools:
+    restart:
+      enabled: true
   data:
     mongodb:
      uri: mongodb://localhost:27017/contact_db
