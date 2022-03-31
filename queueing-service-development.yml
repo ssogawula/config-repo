@@ -1,11 +1,9 @@
 spring:
-  profiles:
-    - docker
   data:
     mongodb:
-     uri: ${MONGO_URI:mongodb://mongocontainer:27017/queueing_db}
+     uri: mongodb://localhost:27017/queueing_db
   rabbitmq:
-    host: rabbitmq
+    host: localhost
     port: 5672
     username: guest
     password: guest
@@ -18,7 +16,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_URI:http://discovery-server:8761/eureka}
+      defaultZone: http://local:8761/eureka
     registerWithEureka: true
     fetchRegistry: true
     eureka-server-read-timeout-seconds: 30
